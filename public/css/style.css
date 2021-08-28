@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Satisfy&display=swap');
+
+/* Gerais */
+
+body{
+    background-image: url(/imagens/background.jpg);
+    background-color: pink;
+}
+
+p {
+    font-size: 14px;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* Fim Gerais */
+
+/* Barra de Navegação */
+
+header, .navbar {
+    padding-top: 0;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+#logo {
+    width: 150px;
+    font-size: 70px;
+}
+
+.navbar-brand {
+    color: #444;
+}
+
+#main_nav a{
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 10px;
+    color: #444;
+}
+
+#main_nav li:hover {
+    color: white;
+    background-color: pink;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+    padding: 1rem .8rem;
+}
+
+@media screen and (max-width: 580px) {
+    .navbar-nav {
+        background-color: rgb(255, 255, 255); 
+        text-align: center;
+    }
+}
+
+/* Fim Barra de Navegação */
+
+/* Área de Informações */
+
+#info-area {
+    font-family: 'Amatic SC', cursive;
+}
+
+#vamos-casar {
+    margin: 50px 0 5px 0;
+    text-align: center;
+    font-size: 8rem;
+    font-weight: bold;
+}
+
+#noivos {
+    margin: 0 0 65px 0;
+    font-size: 9rem;
+    text-align: center;
+    letter-spacing: 5px;
+    text-shadow: 3px -2px pink;
+    font-weight: bold;
+}
+
+#data {
+    margin: 0 0 10px 0;
+    font-weight: bold;
+    text-align: center;
+    font-size: 6rem;
+}
+
+/* As @media queries devem estar sempre abaixo da query original*/
+@media (max-width: 576px) {
+    #noivos { font-size: 2rem; }
+    #data { font-size: 2rem;}
+}
+@media (max-width: 768px) {
+    #noivos { font-size: 4rem; }
+    #data { font-size: 3rem;}
+}
+@media (max-width: 992px) {
+    #noivos { font-size: 6rem; }
+    #data { font-size: 4rem; }
+}
+@media (max-width: 1200px) {
+    #noivos { font-size: 8rem; }
+    #data { font-size: 5rem; }
+}
+
+/* Fim Área de Informações */
+
+/* Google Maps -- local.html */
+
+.map-container {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+    }
+
+.map-container iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    }
+
+@media (max-width: 1000px) {
+    .map-container {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+/* Fim Google Maps -- local.html */
+
+/*Lista de Presentes -- handlebars - lista-presentes*/
+
+
+/* Fim Lista de Presentes -- handlebars - lista-presentes */
